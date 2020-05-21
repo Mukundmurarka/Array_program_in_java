@@ -1,0 +1,83 @@
+===========Question 1===========
+code 
+
+
+// create an  array of size 10 of integers. Take input from user for these 10 elements and print the intaire array after that 
+
+
+
+package javaarrayquestion;
+
+import java.util.Scanner;
+
+public class Javaarrayquestion {
+
+    public static void main(String[] args) {
+        int n;
+        int count = 0;
+        Scanner scan = new Scanner (System.in);
+        System.out.println("Enter the size of Array");
+         n= scan.nextInt();
+        
+        int size[];
+        size = new int[n];
+        System.out.println("Enter the elements of array");
+        for(int i =0; i<n;i++){
+            size[i]= scan.nextInt();
+            count= count+1;
+            
+        }
+        System.out.println("you have entered");
+        for(int i=0;i<n;i++){
+        System.out.print(size[i]);
+        }
+        
+    }
+    
+}
+===============Question 2 =============
+code 
+
+
+import java.util.Scanner;
+
+public class question2 {
+
+    /**
+     *
+     * @param args
+     */
+    public static void main(String args[]){
+        int n,m;
+        int count=0;
+        int i;
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the size of array");
+        m=s.nextInt();
+        int arr[]= new int[m];
+        System.out.println("enter the elemnent of array");
+        for ( i = 0;i<m; i++){
+            arr[i]= s.nextInt();
+            count = count+1;
+           
+        }
+        System.out.println("you have entered");
+        for ( i=0;i<m;i++){
+            System.out.println(arr[i]);
+        }
+           
+            System.out.println("nete the number you want to search");
+            n=s.nextInt();
+            if(arr[i]==n){
+                System.out.println("True");
+                
+            }else{
+                System.out.println("FAlse");
+                
+            }
+           
+        }
+        
+    }
+    
+
