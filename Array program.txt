@@ -36,17 +36,14 @@ public class Javaarrayquestion {
     
 }
 ===============Question 2 =============
-code 
+Check whether n  present in an array of size m or not.
+
+code
 
 
 import java.util.Scanner;
 
 public class question2 {
-
-    /**
-     *
-     * @param args
-     */
     public static void main(String args[]){
         int n,m;
         int count=0;
@@ -59,7 +56,6 @@ public class question2 {
         for ( i = 0;i<m; i++){
             arr[i]= s.nextInt();
             count = count+1;
-           
         }
         System.out.println("you have entered");
         for ( i=0;i<m;i++){
@@ -68,16 +64,196 @@ public class question2 {
            
             System.out.println("nete the number you want to search");
             n=s.nextInt();
-            if(arr[i]==n){
+            //boolean Test= false;
+            for (int element : arr){
+            if(element == n){
                 System.out.println("True");
                 
-            }else{
-                System.out.println("FAlse");
-                
             }
-           
+            }
         }
         
     }
     
+========question 3==========
+Find	the	minimum	and	maximum	element	in	an	array.	
+code 
+
+
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class question3 {
+    public static void main (String[] args){
+        int n;
+        int count = 0;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter the size of element");
+        n=scan.nextInt();
+        int arrr[] = new int[n];
+        System.out.println("enter the element of array");
+        for (int i=0; i<n;i++){
+            arrr[i]=scan.nextInt();
+            count= count+1;
+           
+        }
+//        for(int i =0;i<n;i++){
+//            System.out.println(arrr[i]);
+//        }
+// Arrays.sort() is a function to sort an array 
+        Arrays.sort(arrr);
+        System.out.println(arrr[n-1]);
+        System.out.println(arrr[0]);
+            
+        }
+        
+    }
+
+======question 4=========
+Write	a	program	to	reverse	the	array.	
+code   
+
+import java.util.Scanner;
+
+public class question4 {
+        public static void reverse(int a[],int n){
+            int br[]=new int[n];
+    int k=n;
+    for(int j =0;j<n;j++){
+        br[k-1]=a[j];
+        k=k-1;
+        
+    }
+    for (int j=0;j<n;j++){
+        System.out.println(br[j]);
+    }
+        }
+        
+    public static void main(String []args){
+        int n;
+        int count=0;
+        int i;
+    Scanner s = new Scanner(System.in);  
+    System.out.println("enter the size of array ");
+    n =  s.nextInt();
+    int ar[]= new int[n];
+    System.out.println("enter the element of array ");
+    for (i=0;i<n;i++){
+        ar[i]=s.nextInt();
+        count= count+1;
+        
+    }
+//    for ( i =0;i<n;i++){
+//        System.out.println(ar[i]);
+//        
+//    }
+    reverse(ar,n);
+    
+    }
+    
+}
+=======question 5 =========
+Write	a	program	to	sort	the	given	array.	
+code 
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class question6 {
+    public static void main(String args[]){
+        
+        int n;
+        int count=0;
+        Scanner sca =  new Scanner(System.in);
+        System.out.println("enter the size of array");
+        n=sca.nextInt();
+        int ar[]=new int[n];
+        System.out.println("enter the elements of array");
+        for (int i=0;i<n;i++){
+            ar[i]=sca.nextInt();
+            count=count+1;
+            
+        }
+        System.out.println("the sorted array is");
+       
+       Arrays.sort(ar);
+        for(int i=0;i<n;i++){
+            System.out.println(ar[i]);
+        }
+      
+       
+    }
+    
+}
+=========question 9==========
+	 Given	an	array	which	consists	of	only	0,	1	and	2.	Sort	the	array	without	
+using	any	sorting	algorithm.	
+code 
+import java.util.Arrays;
+import java.util.Scanner;
+
+//Given	an array which consists	of only	0, 1and2.	Sort	the	array	without	
+//using	any	sorting	algorithm.	
+public class question5 {
+    public static void main(String []args){
+        int count=0;
+        int n;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter the size of array");
+         n= scan.nextInt();
+        int a[]= new int[n];
+        System.out.println("enter the element of array");
+        for (int i = 0;i<n;i++){
+            a[i]=scan.nextInt();
+           
+            count =count+1;
+            
+            
+        }
+        for (int i=0;i<n;i++){
+            System.out.println(a[i]);
+        }
+        System.out.println("sorted array");
+        Arrays.sort(a);
+        for (int i=0;i<n;i++){
+            System.out.println(a[i]);
+        }
+    }
+    
+}
+===========question 10===========
+Find	the	range	of	the	array.	Range	means	the	difference	between	the	
+maximum	and	minimum	element	in	the	array.	
+code 
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class question9 {
+public static void main(String args[]){
+    int count=0;
+    Scanner scan=new Scanner(System.in);
+    System.out.println("enter the size of array");
+    int n=scan.nextInt();
+    int arr[]=new int[n];
+    System.out.println("enter the elemnts of array");
+    for (int i=0;i<n;i++){
+        arr[i]=scan.nextInt();
+        count = count+1;
+        
+    }
+    for (int i=0;i<n;i++){
+        System.out.println(arr[i]);
+    }
+    Arrays.sort(arr);
+    System.out.println("range is= "+(arr[n-1]-arr[0]));
+    
+}    
+}
+
+
+
+
+
+
 
